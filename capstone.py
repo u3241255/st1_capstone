@@ -1,14 +1,7 @@
 from flask import Flask, request, render_template
+from predict import getModelPrediction
 
 app = Flask(__name__)
-
-# http://127.0.0.1:5000/predict?isSouthernMetro=y&rooms=3&bathrooms=2&isHouse=y&lat=-35&lon=135
-
-def getModelPrediction(isSouthernMetro, rooms, bathrooms, isHouse, lat, lon):
-    isUnit = not isHouse
-
-    return 1.0
-
 
 @app.route("/predict")
 def predict():
