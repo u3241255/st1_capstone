@@ -1,6 +1,6 @@
 # Software Technology 1 - Capstone Project
 
-## Freya MacBean (u321255)
+## Freya MacBean (u3241255)
 
 To run:
 
