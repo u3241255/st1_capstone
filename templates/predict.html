@@ -1,0 +1,41 @@
+<!doctype html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <title>House Price Predictor</title>
+    <h1>Freya MacBean</h1>
+
+    <div>
+        <h2>Input parameters</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Is southern metro area?</th>
+                    <th>Number of rooms</th>
+                    <th>Number of bathrooms</th>
+                    <th>Is house?</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ isSouthernMetro }}</td>
+                    <td>{{ rooms }}</td>
+                    <td>{{ bathrooms }}</td>
+                    <td>{{ isHouse }}</td>
+                    <td>{{ lat }}</td>
+                    <td>{{ lon }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h3>Predicted price: ${{ price }}</h3>
+    </div>
+</body>
