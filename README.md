@@ -2,6 +2,10 @@
 
 ## Freya MacBean (u3241255)
 
+To install required libraries:
+
+    $ python3 -m pip install -r requirements.txt
+
 To run:
 
     $ flask --app capstone run
