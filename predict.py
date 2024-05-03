@@ -18,4 +18,4 @@ def getModelPrediction(isSouthernMetro, rooms, bathrooms, isHouse, lat, lon):
 
     model = loadPredictionModel()
 
-    return(pd.DataFrame(model.predict(X), columns=['Prediction']))
+    return(float(pd.DataFrame(model.predict(X), columns=['Prediction']).values[0]))

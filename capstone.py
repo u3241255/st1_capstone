@@ -9,8 +9,8 @@ def predict():
     rooms = int(request.args.get('rooms', 4))
     bathrooms = float(int(request.args.get('bathrooms', 2)))
     isHouse = request.args.get('isHouse', "y").lower() == "y"
-    lat = float(int(request.args.get('lat', "-37.81")))
-    lon = float(int(request.args.get('lon', "144.96")))
+    lat = float(request.args.get('lat', "-37.81"))
+    lon = float(request.args.get('lon', "144.96"))
 
     price = getModelPrediction(isSouthernMetro, rooms, bathrooms, isHouse, lat, lon)
 
